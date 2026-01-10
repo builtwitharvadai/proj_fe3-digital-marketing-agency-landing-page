@@ -1,0 +1,5 @@
+# Using ImageMagick (if available)
+convert -background transparent logo.svg -define icon:auto-resize=16,32,48 favicon.ico
+
+# Using Node.js package
+npx to-ico input.png > favicon.ico

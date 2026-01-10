@@ -1,0 +1,410 @@
+/* ============================================================================
+   CSS Reset & Normalization
+   Modern CSS reset based on modern-normalize with accessibility improvements
+   ============================================================================ */
+
+/* Box sizing reset with inheritance pattern */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Document-level defaults */
+html {
+  /* Prevent font size adjustments on orientation change */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  
+  /* Enable smooth scrolling with reduced motion support */
+  scroll-behavior: smooth;
+  
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  /* Set default line height for better readability */
+  line-height: 1.5;
+  
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Body defaults */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  line-height: inherit;
+  overflow-x: hidden;
+}
+
+/* Improve consistency of default fonts */
+body,
+input,
+button,
+textarea,
+select {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Headings reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* Paragraph spacing */
+p {
+  text-wrap: pretty;
+}
+
+/* List reset */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Link defaults */
+a {
+  color: inherit;
+  text-decoration: inherit;
+  background-color: transparent;
+}
+
+/* Remove default button styles */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* Form element normalization */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  background-color: transparent;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none;
+}
+
+/* Remove default legend styles */
+legend {
+  padding: 0;
+}
+
+/* Textarea defaults */
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+
+/* Remove spinner buttons from number inputs */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Remove default search input styles */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* Media element defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* SVG defaults */
+svg {
+  fill: currentColor;
+}
+
+/* Table normalization */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Remove default table cell padding */
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+/* Horizontal rule normalization */
+hr {
+  border: none;
+  border-top: 1px solid;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+/* Code and pre defaults */
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 1em;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre;
+}
+
+/* Abbreviation defaults */
+abbr[title] {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+/* Bold and strong normalization */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Small text normalization */
+small {
+  font-size: 80%;
+}
+
+/* Subscript and superscript normalization */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Dialog normalization */
+dialog {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+/* Summary cursor */
+summary {
+  cursor: pointer;
+  display: list-item;
+}
+
+/* Progress element normalization */
+progress {
+  vertical-align: baseline;
+}
+
+/* Hidden attribute support */
+[hidden] {
+  display: none !important;
+}
+
+/* Accessibility improvements */
+
+/* Focus visible styles for keyboard navigation */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Improve focus visibility for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Screen reader only utility class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  z-index: 100;
+  padding: 8px 16px;
+  background-color: currentColor;
+  color: inherit;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Disabled state normalization */
+[disabled],
+[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :focus-visible {
+    outline-width: 3px;
+  }
+  
+  img {
+    opacity: 0.9;
+  }
+}
+
+/* Print styles */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  
+  a[href]::after {
+    content: ' (' attr(href) ')';
+  }
+  
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
+  
+  pre {
+    white-space: pre-wrap !important;
+  }
+  
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

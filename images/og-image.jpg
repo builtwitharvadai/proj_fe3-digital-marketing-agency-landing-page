@@ -1,0 +1,25 @@
+<!-- In index.html, update the og:image meta tag -->
+<meta property="og:image" content="https://via.placeholder.com/1200x630/4F46E5/ffffff?text=Digital+Marketing+Agency">
+```
+
+## Solution 4: Programmatic Generation (Recommended for Production)
+Create a Node.js script to generate the image:
+
+```bash
+npm install canvas
+```
+
+Then create a script `generate-og-image.js` that uses the Canvas API to generate the image programmatically.
+
+## Recommended Approach
+Since this is a production project, I recommend:
+1. **Hire a designer** or use **Canva** to create a professional OG image
+2. Ensure the image includes:
+   - Your agency branding/logo
+   - "Digital Marketing Agency" text
+   - Professional color scheme matching your site
+   - High contrast for readability
+3. Optimize the image before adding to the project
+4. Place it in the `images/` directory as `og-image.jpg`
+
+Would you like me to provide a Node.js script to generate a basic OG image programmatically, or would you prefer guidance on using a specific design tool?

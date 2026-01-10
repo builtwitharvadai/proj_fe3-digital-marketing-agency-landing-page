@@ -1,746 +1,366 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <!-- Character encoding MUST be first -->
   <meta charset="UTF-8">
+  
+  <!-- Viewport for responsive design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
-  <title>Digital Marketing Agency | Expert Marketing Solutions & Strategy</title>
-  <meta name="description" content="Transform your business with our comprehensive digital marketing services. Specializing in SEO, social media, content marketing, and data-driven strategies.">
+  <!-- Document title with site name -->
+  <title>Digital Marketing Agency | Professional Marketing Solutions</title>
   
-  <meta property="og:title" content="Digital Marketing Agency | Expert Marketing Solutions">
-  <meta property="og:description" content="Transform your business with our comprehensive digital marketing services. Specializing in SEO, social media, content marketing, and data-driven strategies.">
-  <meta property="og:image" content="https://example.com/assets/og-image.jpg">
+  <!-- Meta descriptions for SEO -->
+  <meta name="description" content="Transform your digital presence with our comprehensive marketing solutions. Expert SEO, social media, content marketing, and analytics services.">
+  
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="Digital Marketing Agency | Professional Marketing Solutions">
+  <meta property="og:description" content="Transform your digital presence with our comprehensive marketing solutions. Expert SEO, social media, content marketing, and analytics services.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop">
   <meta property="og:url" content="https://example.com">
   <meta property="og:type" content="website">
   
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Digital Marketing Agency | Expert Marketing Solutions">
-  <meta name="twitter:description" content="Transform your business with our comprehensive digital marketing services.">
-  <meta name="twitter:image" content="https://example.com/assets/twitter-card.jpg">
+  <meta name="twitter:title" content="Digital Marketing Agency | Professional Marketing Solutions">
+  <meta name="twitter:description" content="Transform your digital presence with our comprehensive marketing solutions.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=630&fit=crop">
   
+  <!-- Canonical URL to prevent duplicate content -->
   <link rel="canonical" href="https://example.com">
   
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   
-  <link rel="stylesheet" href="css/main.min.css">
+  <!-- DNS prefetch and preconnect for performance -->
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Digital Marketing Agency",
-    "url": "https://example.com",
-    "logo": "https://example.com/images/logo.png",
-    "description": "Professional digital marketing agency specializing in SEO, social media, and content marketing",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Marketing Street",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "postalCode": "10001",
-      "addressCountry": "US"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-555-123-4567",
-      "contactType": "Customer Service",
-      "email": "info@example.com"
-    },
-    "sameAs": [
-      "https://facebook.com/example",
-      "https://twitter.com/example",
-      "https://linkedin.com/company/example"
-    ]
-  }
-  </script>
+  <!-- Preload critical resources -->
+  <link rel="preload" href="css/variables.css" as="style">
+  <link rel="preload" href="css/reset.css" as="style">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/images.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- Theme color -->
+  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1a1a2e" media="(prefers-color-scheme: dark)">
 </head>
 <body>
+  <!-- Skip navigation for accessibility -->
   <a href="#main" class="skip-link">Skip to main content</a>
   
+  <!-- Semantic header -->
   <header role="banner" class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <a href="/" aria-label="Digital Marketing Agency - Home">
-            <img src="images/logo.svg" alt="Digital Marketing Agency" width="180" height="50">
+    <nav role="navigation" aria-label="Main navigation" class="main-nav">
+      <div class="container">
+        <div class="nav-brand">
+          <a href="/" aria-label="Digital Marketing Agency Home">
+            <span class="brand-name">Digital Marketing Agency</span>
           </a>
         </div>
-        
-        <nav role="navigation" aria-label="Main navigation" class="main-nav">
-          <button 
-            type="button" 
-            class="nav-toggle" 
-            aria-expanded="false" 
-            aria-controls="nav-menu"
-            aria-label="Toggle navigation menu"
-          >
-            <span class="hamburger" aria-hidden="true"></span>
-          </button>
-          
-          <ul id="nav-menu" role="list" class="nav-menu">
-            <li><a href="#services" aria-label="View our services">Services</a></li>
-            <li><a href="#about" aria-label="Learn about us">About</a></li>
-            <li><a href="#case-studies" aria-label="View case studies">Case Studies</a></li>
-            <li><a href="#testimonials" aria-label="Read testimonials">Testimonials</a></li>
-            <li><a href="#contact" class="nav-cta" aria-label="Contact us">Contact</a></li>
-          </ul>
-        </nav>
+        <ul role="list" class="nav-menu">
+          <li><a href="#services" aria-current="page">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </header>
   
+  <!-- Main content with landmark -->
   <main id="main" role="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-content">
-          <h1 id="hero-title">Transform Your Business with Data-Driven Digital Marketing</h1>
-          <p class="hero-subtitle">We help businesses grow through strategic marketing solutions that deliver measurable results</p>
-          
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary" aria-label="Get started with a free consultation">Get Started</a>
-            <a href="#services" class="btn btn-secondary" aria-label="Learn more about our services">Learn More</a>
-          </div>
-        </div>
-        
-        <div class="hero-image">
-          <img 
-            src="images/hero-image.jpg" 
-            alt="Digital marketing team collaborating on strategy" 
-            width="800" 
-            height="600"
-            loading="eager"
-            fetchpriority="high"
-          >
+    <!-- Hero Section -->
+    <section class="hero-section hero-image-wrapper" aria-labelledby="hero-title">
+      <picture>
+        <source 
+          media="(min-width: 1024px)" 
+          srcset="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&auto=format&q=80 1920w,
+                  https://images.unsplash.com/photo-1552664730-d307ca884978?w=1440&h=810&fit=crop&auto=format&q=80 1440w"
+          sizes="100vw"
+        >
+        <source 
+          media="(min-width: 768px)" 
+          srcset="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1440&h=810&fit=crop&auto=format&q=80 1440w,
+                  https://images.unsplash.com/photo-1552664730-d307ca884978?w=1024&h=576&fit=crop&auto=format&q=80 1024w"
+          sizes="100vw"
+        >
+        <img 
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=768&h=432&fit=crop&auto=format&q=80"
+          srcset="https://images.unsplash.com/photo-1552664730-d307ca884978?w=768&h=432&fit=crop&auto=format&q=80 768w,
+                  https://images.unsplash.com/photo-1552664730-d307ca884978?w=640&h=360&fit=crop&auto=format&q=80 640w"
+          sizes="100vw"
+          alt="Professional marketing team collaborating in modern office"
+          class="hero-image"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+      </picture>
+      <div class="hero-content container">
+        <h1 id="hero-title" class="hero-title">Transform Your Digital Presence</h1>
+        <p class="hero-subtitle">Data-driven marketing solutions that deliver measurable results</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#services" class="btn btn-secondary">Our Services</a>
         </div>
       </div>
     </section>
-    
-    <section id="services" class="services" aria-labelledby="services-title">
+
+    <!-- Services Section -->
+    <section id="services" class="services-section" aria-labelledby="services-title">
       <div class="container">
         <header class="section-header">
-          <h2 id="services-title">Our Services</h2>
-          <p class="section-subtitle">Comprehensive digital marketing solutions tailored to your business goals</p>
+          <h2 id="services-title" class="section-title">Our Services</h2>
+          <p class="section-subtitle">Comprehensive digital marketing solutions tailored to your business needs</p>
         </header>
         
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/seo.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="seo-icon-title" role="img">
+                <title id="seo-icon-title">SEO Services</title>
+                <circle cx="26" cy="26" r="12"/>
+                <path d="M35 35l8 8"/>
+                <path d="M20 26h12M26 20v12"/>
+                <path d="M42 16l4 4-4 4M48 12v16"/>
+                <path d="M54 20h-6"/>
+              </svg>
             </div>
-            <h3>Search Engine Optimization</h3>
-            <p>Increase your organic visibility and drive qualified traffic with our proven SEO strategies and technical optimization.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about SEO services">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Search Engine Optimization</h3>
+            <p class="service-description">Improve your search rankings and drive organic traffic with our proven SEO strategies.</p>
           </article>
-          
+
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/social-media.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="social-media-icon-title" role="img">
+                <title id="social-media-icon-title">Social Media Marketing</title>
+                <circle cx="32" cy="32" r="8"/>
+                <circle cx="16" cy="16" r="6"/>
+                <circle cx="48" cy="16" r="6"/>
+                <circle cx="16" cy="48" r="6"/>
+                <circle cx="48" cy="48" r="6"/>
+                <path d="M24 32l-4-12M40 32l4-12M24 32l-4 12M40 32l4 12"/>
+              </svg>
             </div>
-            <h3>Social Media Marketing</h3>
-            <p>Build engaged communities and amplify your brand presence across all major social media platforms.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about social media marketing">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Social Media Marketing</h3>
+            <p class="service-description">Build your brand presence and engage your audience across all major social platforms.</p>
           </article>
-          
+
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/content.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="content-icon-title" role="img">
+                <title id="content-icon-title">Content Marketing</title>
+                <rect x="12" y="8" width="40" height="48" rx="2"/>
+                <path d="M20 20h24M20 28h24M20 36h16"/>
+                <path d="M44 44l8 8M48 40l8 8"/>
+              </svg>
             </div>
-            <h3>Content Marketing</h3>
-            <p>Create compelling content that resonates with your audience and drives conversions through strategic storytelling.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about content marketing">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Content Marketing</h3>
+            <p class="service-description">Create compelling content that resonates with your audience and drives conversions.</p>
           </article>
-          
+
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/ppc.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="ppc-icon-title" role="img">
+                <title id="ppc-icon-title">Pay-Per-Click Advertising</title>
+                <circle cx="32" cy="32" r="20"/>
+                <circle cx="32" cy="32" r="12"/>
+                <circle cx="32" cy="32" r="4"/>
+                <path d="M32 12v8M32 44v8M12 32h8M44 32h8"/>
+                <path d="M20 20l5.66 5.66M38.34 38.34L44 44M44 20l-5.66 5.66M20 44l5.66-5.66"/>
+              </svg>
             </div>
-            <h3>Pay-Per-Click Advertising</h3>
-            <p>Maximize ROI with targeted PPC campaigns across Google Ads, Facebook, and other advertising platforms.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about PPC advertising">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Pay-Per-Click Advertising</h3>
+            <p class="service-description">Maximize ROI with targeted PPC campaigns across Google Ads and social platforms.</p>
           </article>
-          
+
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/email.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="email-icon-title" role="img">
+                <title id="email-icon-title">Email Marketing</title>
+                <rect x="8" y="16" width="48" height="32" rx="2"/>
+                <path d="M8 16l24 16 24-16"/>
+                <path d="M8 48l16-12M56 48L40 36"/>
+              </svg>
             </div>
-            <h3>Email Marketing</h3>
-            <p>Nurture leads and retain customers with personalized email campaigns that drive engagement and sales.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about email marketing">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Email Marketing</h3>
+            <p class="service-description">Nurture leads and retain customers with personalized email campaigns.</p>
           </article>
-          
+
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <img src="images/icons/analytics.svg" alt="" width="64" height="64" loading="lazy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="analytics-icon-title" role="img">
+                <title id="analytics-icon-title">Analytics and Reporting</title>
+                <path d="M8 48h48"/>
+                <rect x="12" y="32" width="8" height="16"/>
+                <rect x="24" y="24" width="8" height="24"/>
+                <rect x="36" y="16" width="8" height="32"/>
+                <rect x="48" y="28" width="8" height="20"/>
+                <path d="M12 20l8-4 8 8 8-8 8 4"/>
+              </svg>
             </div>
-            <h3>Analytics & Reporting</h3>
-            <p>Make data-driven decisions with comprehensive analytics, tracking, and actionable insights.</p>
-            <a href="#contact" class="service-link" aria-label="Learn more about analytics services">Learn More <span aria-hidden="true">→</span></a>
+            <h3 class="service-title">Analytics & Reporting</h3>
+            <p class="service-description">Track performance and gain actionable insights with comprehensive analytics.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-labelledby="web-design-icon-title" role="img">
+                <title id="web-design-icon-title">Web Design and Development</title>
+                <rect x="8" y="12" width="48" height="36" rx="2"/>
+                <path d="M8 24h48"/>
+                <circle cx="16" cy="18" r="1.5"/>
+                <circle cx="22" cy="18" r="1.5"/>
+                <circle cx="28" cy="18" r="1.5"/>
+                <path d="M20 34l4 4-4 4M28 34l4 4M36 34h8"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Web Design & Development</h3>
+            <p class="service-description">Create stunning, high-performance websites that convert visitors into customers.</p>
           </article>
         </div>
       </div>
     </section>
-    
-    <section id="about" class="about" aria-labelledby="about-title">
+
+    <!-- About Section -->
+    <section id="about" class="about-section" aria-labelledby="about-title">
       <div class="container">
-        <div class="about-content">
-          <div class="about-text">
+        <div class="about-grid">
+          <div class="about-content">
             <header>
-              <h2 id="about-title">About Our Agency</h2>
+              <h2 id="about-title" class="section-title">About Our Agency</h2>
+              <p class="section-subtitle">Driving digital success since 2010</p>
             </header>
-            <p>We are a team of passionate digital marketing professionals dedicated to helping businesses achieve their growth objectives through innovative strategies and data-driven solutions.</p>
-            <p>With over 10 years of experience and 500+ successful campaigns, we combine creativity with analytics to deliver measurable results that exceed expectations.</p>
-            
-            <div class="about-stats">
-              <div class="stat">
-                <strong class="stat-number">10+</strong>
-                <span class="stat-label">Years Experience</span>
-              </div>
-              <div class="stat">
-                <strong class="stat-number">500+</strong>
-                <span class="stat-label">Projects Completed</span>
-              </div>
-              <div class="stat">
-                <strong class="stat-number">98%</strong>
-                <span class="stat-label">Client Satisfaction</span>
-              </div>
-              <div class="stat">
-                <strong class="stat-number">50+</strong>
-                <span class="stat-label">Team Members</span>
-              </div>
-            </div>
+            <p class="about-text">We are a full-service digital marketing agency dedicated to helping businesses grow their online presence and achieve measurable results. Our team of experts combines creativity with data-driven strategies to deliver exceptional outcomes.</p>
+            <p class="about-text">With over a decade of experience, we've helped hundreds of clients across various industries reach their marketing goals and exceed their expectations.</p>
+            <a href="#contact" class="btn btn-primary">Work With Us</a>
           </div>
-          
-          <div class="about-image">
-            <img 
-              src="images/about-team.jpg" 
-              alt="Our marketing team working together" 
-              width="600" 
-              height="450"
-              loading="lazy"
-            >
+          <div class="about-image-wrapper image-wrapper image-wrapper--4-3">
+            <picture>
+              <source 
+                media="(min-width: 768px)" 
+                srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop&auto=format&q=80 800w,
+                        https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop&auto=format&q=80 600w"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              >
+              <img 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop&auto=format&q=80"
+                srcset="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=450&fit=crop&auto=format&q=80 600w,
+                        https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format&q=80 400w"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                alt="Diverse team of marketing professionals collaborating on strategy"
+                class="about-image"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="600"
+              >
+            </picture>
           </div>
         </div>
       </div>
     </section>
-    
-    <section id="case-studies" class="case-studies" aria-labelledby="case-studies-title">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="container">
         <header class="section-header">
-          <h2 id="case-studies-title">Case Studies</h2>
-          <p class="section-subtitle">Real results from real clients</p>
-        </header>
-        
-        <div class="case-studies-grid">
-          <article class="case-study-card">
-            <div class="case-study-image">
-              <img 
-                src="images/case-study-1.jpg" 
-                alt="E-commerce website showing increased sales metrics" 
-                width="400" 
-                height="300"
-                loading="lazy"
-              >
-            </div>
-            <div class="case-study-content">
-              <h3>E-Commerce Growth Strategy</h3>
-              <p class="case-study-client">Tech Retailer</p>
-              <p>Increased online revenue by 250% through comprehensive SEO and PPC optimization strategies.</p>
-              
-              <div class="case-study-metrics">
-                <div class="metric">
-                  <strong>250%</strong>
-                  <span>Revenue Increase</span>
-                </div>
-                <div class="metric">
-                  <strong>180%</strong>
-                  <span>Traffic Growth</span>
-                </div>
-                <div class="metric">
-                  <strong>45%</strong>
-                  <span>Conversion Rate</span>
-                </div>
-              </div>
-              
-              <a href="#contact" class="case-study-link" aria-label="Read full case study for Tech Retailer">Read Full Case Study <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          
-          <article class="case-study-card">
-            <div class="case-study-image">
-              <img 
-                src="images/case-study-2.jpg" 
-                alt="Social media engagement dashboard" 
-                width="400" 
-                height="300"
-                loading="lazy"
-              >
-            </div>
-            <div class="case-study-content">
-              <h3>Social Media Transformation</h3>
-              <p class="case-study-client">Fashion Brand</p>
-              <p>Built an engaged community of 500K+ followers and increased brand awareness by 400%.</p>
-              
-              <div class="case-study-metrics">
-                <div class="metric">
-                  <strong>500K+</strong>
-                  <span>New Followers</span>
-                </div>
-                <div class="metric">
-                  <strong>400%</strong>
-                  <span>Brand Awareness</span>
-                </div>
-                <div class="metric">
-                  <strong>8.5%</strong>
-                  <span>Engagement Rate</span>
-                </div>
-              </div>
-              
-              <a href="#contact" class="case-study-link" aria-label="Read full case study for Fashion Brand">Read Full Case Study <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          
-          <article class="case-study-card">
-            <div class="case-study-image">
-              <img 
-                src="images/case-study-3.jpg" 
-                alt="Content marketing performance graphs" 
-                width="400" 
-                height="300"
-                loading="lazy"
-              >
-            </div>
-            <div class="case-study-content">
-              <h3>Content Marketing Success</h3>
-              <p class="case-study-client">SaaS Company</p>
-              <p>Generated 10,000+ qualified leads through strategic content marketing and SEO optimization.</p>
-              
-              <div class="case-study-metrics">
-                <div class="metric">
-                  <strong>10K+</strong>
-                  <span>Qualified Leads</span>
-                </div>
-                <div class="metric">
-                  <strong>320%</strong>
-                  <span>Organic Traffic</span>
-                </div>
-                <div class="metric">
-                  <strong>65%</strong>
-                  <span>Lead Quality</span>
-                </div>
-              </div>
-              
-              <a href="#contact" class="case-study-link" aria-label="Read full case study for SaaS Company">Read Full Case Study <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    
-    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="testimonials-title">What Our Clients Say</h2>
-          <p class="section-subtitle">Trusted by businesses worldwide</p>
-        </header>
-        
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"Working with this agency transformed our online presence. Their strategic approach and attention to detail resulted in a 300% increase in qualified leads within six months."</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-1.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">Sarah Johnson</cite>
-                <p class="testimonial-role">CEO, TechStart Inc.</p>
-              </div>
-            </footer>
-          </article>
-          
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"The team's expertise in social media marketing helped us build a community of over 500,000 engaged followers. Their creativity and data-driven approach are unmatched."</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-2.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">Michael Chen</cite>
-                <p class="testimonial-role">Marketing Director, Fashion Forward</p>
-              </div>
-            </footer>
-          </article>
-          
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"Outstanding results! Our ROI increased by 450% in the first year. The team is professional, responsive, and truly understands digital marketing."</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-3.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">Emily Rodriguez</cite>
-                <p class="testimonial-role">Founder, GrowthHub</p>
-              </div>
-            </footer>
-          </article>
-          
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"Their content marketing strategy helped us establish thought leadership in our industry. We've seen a 280% increase in organic traffic and significantly improved brand recognition."</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-4.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">David Thompson</cite>
-                <p class="testimonial-role">VP Marketing, CloudSolutions</p>
-              </div>
-            </footer>
-          </article>
-          
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"Best decision we made for our business. The PPC campaigns they managed generated a 5x return on ad spend. Highly recommend their services!"</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-5.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">Lisa Anderson</cite>
-                <p class="testimonial-role">Owner, Local Retail Co.</p>
-              </div>
-            </footer>
-          </article>
-          
-          <article class="testimonial-card">
-            <div class="testimonial-content">
-              <p class="testimonial-text">"Professional, knowledgeable, and results-driven. They helped us navigate the complex world of digital marketing and achieve goals we thought were impossible."</p>
-            </div>
-            <footer class="testimonial-author">
-              <img 
-                src="images/testimonials/client-6.jpg" 
-                alt="" 
-                class="testimonial-avatar"
-                width="60" 
-                height="60"
-                loading="lazy"
-              >
-              <div class="testimonial-info">
-                <cite class="testimonial-name">James Wilson</cite>
-                <p class="testimonial-role">CMO, Enterprise Solutions</p>
-              </div>
-            </footer>
-          </article>
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="contact-title">Get Started Today</h2>
-          <p class="section-subtitle">Let's discuss how we can help grow your business</p>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Ready to transform your digital presence? Let's talk.</p>
         </header>
         
         <div class="contact-content">
-          <div class="contact-info">
-            <h3>Contact Information</h3>
-            <address>
-              <div class="contact-item">
-                <strong>Address:</strong>
-                <p>123 Marketing Street<br>New York, NY 10001<br>United States</p>
-              </div>
-              
-              <div class="contact-item">
-                <strong>Phone:</strong>
-                <p><a href="tel:+15551234567" aria-label="Call us at +1 555 123 4567">+1 (555) 123-4567</a></p>
-              </div>
-              
-              <div class="contact-item">
-                <strong>Email:</strong>
-                <p><a href="mailto:info@example.com" aria-label="Email us at info@example.com">info@example.com</a></p>
-              </div>
-              
-              <div class="contact-item">
-                <strong>Business Hours:</strong>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM EST<br>Saturday - Sunday: Closed</p>
-              </div>
-            </address>
-            
-            <div class="social-links">
-              <h4>Follow Us</h4>
-              <ul role="list" class="social-list">
-                <li>
-                  <a href="https://facebook.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
-                    <img src="images/icons/facebook.svg" alt="" width="24" height="24" loading="lazy">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-                    <img src="images/icons/twitter.svg" alt="" width="24" height="24" loading="lazy">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/company/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn">
-                    <img src="images/icons/linkedin.svg" alt="" width="24" height="24" loading="lazy">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://instagram.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
-                    <img src="images/icons/instagram.svg" alt="" width="24" height="24" loading="lazy">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="contact-form-wrapper">
-            <form id="contact-form" class="contact-form" method="POST" action="/submit-contact" novalidate>
-              <div class="form-group">
-                <label for="name">
-                  Full Name
-                  <span aria-label="required">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name"
-                  required
-                  aria-required="true"
-                  aria-invalid="false"
-                  aria-describedby="name-error"
-                  autocomplete="name"
-                  placeholder="John Doe"
-                >
-                <span id="name-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="email">
-                  Email Address
-                  <span aria-label="required">*</span>
-                </label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  name="email"
-                  required
-                  aria-required="true"
-                  aria-invalid="false"
-                  aria-describedby="email-error"
-                  autocomplete="email"
-                  inputmode="email"
-                  placeholder="john@example.com"
-                >
-                <span id="email-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="phone">
-                  Phone Number
-                </label>
-                <input 
-                  type="tel" 
-                  id="phone" 
-                  name="phone"
-                  aria-describedby="phone-error"
-                  autocomplete="tel"
-                  inputmode="tel"
-                  placeholder="+1 (555) 123-4567"
-                >
-                <span id="phone-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="company">
-                  Company Name
-                </label>
-                <input 
-                  type="text" 
-                  id="company" 
-                  name="company"
-                  aria-describedby="company-error"
-                  autocomplete="organization"
-                  placeholder="Your Company"
-                >
-                <span id="company-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="service">
-                  Service Interested In
-                  <span aria-label="required">*</span>
-                </label>
-                <select 
-                  id="service" 
-                  name="service"
-                  required
-                  aria-required="true"
-                  aria-invalid="false"
-                  aria-describedby="service-error"
-                >
-                  <option value="">Select a service</option>
-                  <option value="seo">Search Engine Optimization</option>
-                  <option value="social-media">Social Media Marketing</option>
-                  <option value="content">Content Marketing</option>
-                  <option value="ppc">Pay-Per-Click Advertising</option>
-                  <option value="email">Email Marketing</option>
-                  <option value="analytics">Analytics & Reporting</option>
-                  <option value="other">Other</option>
-                </select>
-                <span id="service-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">
-                  Message
-                  <span aria-label="required">*</span>
-                </label>
-                <textarea 
-                  id="message" 
-                  name="message"
-                  rows="5"
-                  required
-                  aria-required="true"
-                  aria-invalid="false"
-                  aria-describedby="message-error"
-                  placeholder="Tell us about your project and goals..."
-                ></textarea>
-                <span id="message-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <div class="form-group checkbox-group">
-                <input 
-                  type="checkbox" 
-                  id="consent" 
-                  name="consent"
-                  required
-                  aria-required="true"
-                  aria-describedby="consent-description consent-error"
-                >
-                <label for="consent">
-                  I agree to the <a href="/privacy-policy" target="_blank" rel="noopener">privacy policy</a> and consent to be contacted
-                  <span aria-label="required">*</span>
-                </label>
-                <span id="consent-description" class="sr-only">Opens privacy policy in a new window</span>
-                <span id="consent-error" class="error" role="alert" aria-live="polite"></span>
-              </div>
-              
-              <button 
-                type="submit"
-                class="btn btn-primary btn-submit"
-                aria-busy="false"
-                aria-live="polite"
+          <form class="contact-form" method="POST" action="/submit" novalidate>
+            <div class="form-group">
+              <label for="name">Name <span aria-label="required">*</span></label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name"
+                required
+                aria-required="true"
+                autocomplete="name"
               >
-                <span class="button-text">Send Message</span>
-                <span class="button-spinner" aria-hidden="true"></span>
-              </button>
-            </form>
+            </div>
             
-            <div id="form-status" role="status" aria-live="polite" aria-atomic="true" class="form-status"></div>
-          </div>
+            <div class="form-group">
+              <label for="email">Email <span aria-label="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email"
+                required
+                aria-required="true"
+                autocomplete="email"
+              >
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message <span aria-label="required">*</span></label>
+              <textarea 
+                id="message" 
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
   
+  <!-- Semantic footer -->
   <footer role="contentinfo" class="site-footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>About Us</h3>
-          <p>We are a leading digital marketing agency dedicated to helping businesses achieve their growth objectives through innovative strategies and measurable results.</p>
+          <h3 class="footer-title">Digital Marketing Agency</h3>
+          <p class="footer-text">Transforming businesses through innovative digital marketing solutions.</p>
         </div>
         
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <nav aria-label="Footer navigation">
-            <ul role="list">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#case-studies">Case Studies</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Services</h3>
-          <ul role="list">
-            <li><a href="#services">SEO</a></li>
-            <li><a href="#services">Social Media Marketing</a></li>
-            <li><a href="#services">Content Marketing</a></li>
-            <li><a href="#services">PPC Advertising</a></li>
-            <li><a href="#services">Email Marketing</a></li>
-            <li><a href="#services">Analytics</a></li>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul role="list" class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h3>Legal</h3>
-          <ul role="list">
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/terms-of-service">Terms of Service</a></li>
-            <li><a href="/cookie-policy">Cookie Policy</a></li>
-            <li><a href="/accessibility">Accessibility</a></li>
-          </ul>
+          <h3 class="footer-title">Contact</h3>
+          <address class="footer-address">
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          </address>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p>&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="https://facebook.com/example" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img src="images/icons/facebook.svg" alt="" width="20" height="20" loading="lazy">
-          </a>
-          <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-            <img src="images/icons/twitter.svg" alt="" width="20" height="20" loading="lazy">
-          </a>
-          <a href="https://linkedin.com/company/example" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img src="images/icons/linkedin.svg" alt="" width="20" height="20" loading="lazy">
-          </a>
-          <a href="https://instagram.com/example" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <img src="images/icons/instagram.svg" alt="" width="20" height="20" loading="lazy">
-          </a>
-        </div>
       </div>
     </div>
   </footer>
-  
-  <script src="js/main.min.js" defer></script>
+
+  <!-- Scripts -->
+  <script src="js/utils.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

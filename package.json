@@ -1,0 +1,39 @@
+{
+  "name": "digital-marketing-agency-landing-page",
+  "version": "1.0.0",
+  "description": "Professional landing page for a digital marketing agency showcasing services, case studies, and client testimonials",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "npm run build:css && npm run build:js && npm run build:html && npm run build:assets",
+    "build:css": "postcss css/main.css -o dist/css/main.min.css",
+    "build:js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
+    "build:html": "shx cp -r *.html dist/",
+    "build:assets": "shx mkdir -p dist/images dist/assets && shx cp -r images/* dist/images/ && shx cp -r assets/* dist/assets/",
+    "validate": "html-validate *.html",
+    "preview": "npm run build && npx serve dist"
+  },
+  "keywords": [
+    "landing-page",
+    "digital-marketing",
+    "agency",
+    "static-site"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "html-validate": "^8.7.4",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "serve": "^14.2.1",
+    "shx": "^0.3.4",
+    "terser": "^5.26.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

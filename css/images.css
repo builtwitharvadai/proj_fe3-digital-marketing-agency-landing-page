@@ -1,0 +1,505 @@
+/* ============================================================================
+   Image Styles - Responsive Images, Lazy Loading, and Optimization
+   Production-ready image handling with performance and accessibility focus
+   ============================================================================ */
+
+/* ============================================================================
+   Base Image Styles
+   ============================================================================ */
+
+img {
+  /* Prevent images from breaking layout */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+  /* Smooth rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  
+  /* Prevent layout shift during load */
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* ============================================================================
+   Lazy Loading States
+   ============================================================================ */
+
+/* Placeholder state before image loads */
+img[loading="lazy"] {
+  background: linear-gradient(
+    135deg,
+    var(--color-neutral-100) 0%,
+    var(--color-neutral-200) 50%,
+    var(--color-neutral-100) 100%
+  );
+  background-size: 200% 200%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Loaded state with fade-in animation */
+img.loaded {
+  animation: fade-in 0.3s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Error state for failed image loads */
+img.error {
+  background: var(--color-neutral-200);
+  position: relative;
+  min-height: 200px;
+}
+
+img.error::before {
+  content: '⚠️ Image failed to load';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  width: 100%;
+  padding: var(--space-4);
+}
+
+/* ============================================================================
+   Responsive Image Containers
+   ============================================================================ */
+
+/* Base responsive image wrapper */
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-neutral-100);
+}
+
+/* Maintain aspect ratios */
+.image-wrapper--16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.image-wrapper--4-3 {
+  aspect-ratio: 4 / 3;
+}
+
+.image-wrapper--1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.image-wrapper--21-9 {
+  aspect-ratio: 21 / 9;
+}
+
+.image-wrapper--3-2 {
+  aspect-ratio: 3 / 2;
+}
+
+/* Image within wrapper */
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ============================================================================
+   Hero Section Images
+   ============================================================================ */
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  min-height: clamp(400px, 60vh, 800px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Overlay for better text readability */
+.hero-image-wrapper::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+/* Parallax effect for hero images */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-image--parallax {
+    transform: translateY(calc(var(--scroll-position, 0) * -0.3));
+    transition: transform 0.1s linear;
+  }
+}
+
+/* ============================================================================
+   Card Images
+   ============================================================================ */
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform var(--transition-medium) var(--ease-out);
+}
+
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: var(--color-neutral-100);
+  border-radius: var(--radius-lg);
+}
+
+/* Hover effect for card images */
+@media (hover: hover) {
+  .card:hover .card-image {
+    transform: scale(1.05);
+  }
+}
+
+/* ============================================================================
+   Thumbnail Images
+   ============================================================================ */
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast) var(--ease-out);
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: clamp(60px, 10vw, 120px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-neutral-100);
+}
+
+/* Thumbnail hover state */
+@media (hover: hover) {
+  .thumbnail-wrapper:hover .thumbnail {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+  }
+}
+
+/* ============================================================================
+   Avatar Images
+   ============================================================================ */
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-full);
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: clamp(40px, 8vw, 80px);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-full);
+  background: var(--color-neutral-200);
+  border: 2px solid var(--color-background);
+}
+
+.avatar-wrapper--small {
+  width: clamp(32px, 6vw, 48px);
+}
+
+.avatar-wrapper--large {
+  width: clamp(80px, 15vw, 160px);
+}
+
+/* ============================================================================
+   Background Images
+   ============================================================================ */
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.bg-image-wrapper {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Background image overlay */
+.bg-image-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-color, rgba(0, 0, 0, 0.5));
+  z-index: 0;
+}
+
+/* ============================================================================
+   Image Object Fit Utilities
+   ============================================================================ */
+
+.image-cover {
+  object-fit: cover;
+}
+
+.image-contain {
+  object-fit: contain;
+}
+
+.image-fill {
+  object-fit: fill;
+}
+
+.image-scale-down {
+  object-fit: scale-down;
+}
+
+.image-none {
+  object-fit: none;
+}
+
+/* ============================================================================
+   Image Object Position Utilities
+   ============================================================================ */
+
+.image-position-center {
+  object-position: center;
+}
+
+.image-position-top {
+  object-position: top;
+}
+
+.image-position-bottom {
+  object-position: bottom;
+}
+
+.image-position-left {
+  object-position: left;
+}
+
+.image-position-right {
+  object-position: right;
+}
+
+/* ============================================================================
+   Image Filters and Effects
+   ============================================================================ */
+
+.image-grayscale {
+  filter: grayscale(100%);
+  transition: filter var(--transition-medium) var(--ease-out);
+}
+
+.image-grayscale:hover {
+  filter: grayscale(0%);
+}
+
+.image-blur {
+  filter: blur(8px);
+  transition: filter var(--transition-medium) var(--ease-out);
+}
+
+.image-blur:hover {
+  filter: blur(0);
+}
+
+.image-brightness {
+  filter: brightness(0.8);
+  transition: filter var(--transition-medium) var(--ease-out);
+}
+
+.image-brightness:hover {
+  filter: brightness(1);
+}
+
+/* ============================================================================
+   Responsive Image Breakpoints
+   ============================================================================ */
+
+@media (width >= 640px) {
+  .hero-image-wrapper {
+    min-height: clamp(500px, 70vh, 900px);
+  }
+}
+
+@media (width >= 768px) {
+  .card-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (width >= 1024px) {
+  .hero-image-wrapper {
+    min-height: clamp(600px, 80vh, 1000px);
+  }
+}
+
+/* ============================================================================
+   Performance Optimizations
+   ============================================================================ */
+
+/* Use CSS containment for better performance */
+.image-wrapper,
+.card-image-wrapper,
+.thumbnail-wrapper,
+.avatar-wrapper {
+  contain: layout style paint;
+}
+
+/* Optimize rendering for images */
+img {
+  will-change: auto;
+}
+
+/* Only apply will-change during transitions */
+.card:hover .card-image,
+.thumbnail-wrapper:hover .thumbnail {
+  will-change: transform;
+}
+
+/* ============================================================================
+   Accessibility Enhancements
+   ============================================================================ */
+
+/* Ensure decorative images are hidden from screen readers */
+img[alt=""],
+img:not([alt]) {
+  opacity: 1;
+}
+
+/* Focus styles for interactive images */
+a img:focus-visible,
+button img:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   Print Styles
+   ============================================================================ */
+
+@media print {
+  /* Optimize images for print */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  /* Remove background images in print */
+  .bg-image {
+    display: none;
+  }
+  
+  /* Simplify image effects for print */
+  .image-grayscale,
+  .image-blur,
+  .image-brightness {
+    filter: none !important;
+  }
+}
+
+/* ============================================================================
+   Reduced Motion Support
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  img,
+  .card-image,
+  .thumbnail,
+  .hero-image--parallax {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* ============================================================================
+   Dark Mode Adjustments
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  img[loading="lazy"] {
+    background: linear-gradient(
+      135deg,
+      var(--color-neutral-800) 0%,
+      var(--color-neutral-700) 50%,
+      var(--color-neutral-800) 100%
+    );
+  }
+  
+  .image-wrapper,
+  .card-image-wrapper,
+  .thumbnail-wrapper {
+    background: var(--color-neutral-800);
+  }
+  
+  .avatar-wrapper {
+    background: var(--color-neutral-700);
+    border-color: var(--color-neutral-800);
+  }
+}
+
+/* ============================================================================
+   High Contrast Mode
+   ============================================================================ */
+
+@media (prefers-contrast: high) {
+  img {
+    opacity: 1;
+  }
+  
+  .hero-image-wrapper::after {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .avatar-wrapper {
+    border-width: 3px;
+  }
+}

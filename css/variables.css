@@ -1,0 +1,407 @@
+/* ============================================================================
+   CSS Custom Properties - Design System Variables
+   Comprehensive design tokens for colors, typography, spacing, and more
+   Supports both light and dark modes with semantic color naming
+   ============================================================================ */
+
+:root {
+  /* ========================================================================
+     Color System - Light Mode (Default)
+     ======================================================================== */
+  
+  /* Primary Brand Colors */
+  --color-primary-50: hsl(217, 91%, 97%);
+  --color-primary-100: hsl(217, 91%, 92%);
+  --color-primary-200: hsl(217, 91%, 84%);
+  --color-primary-300: hsl(217, 91%, 72%);
+  --color-primary-400: hsl(217, 91%, 66%);
+  --color-primary-500: hsl(217, 91%, 60%);
+  --color-primary-600: hsl(217, 91%, 48%);
+  --color-primary-700: hsl(217, 91%, 36%);
+  --color-primary-800: hsl(217, 91%, 28%);
+  --color-primary-900: hsl(217, 91%, 20%);
+  
+  /* Secondary Brand Colors */
+  --color-secondary-50: hsl(340, 82%, 97%);
+  --color-secondary-100: hsl(340, 82%, 92%);
+  --color-secondary-200: hsl(340, 82%, 84%);
+  --color-secondary-300: hsl(340, 82%, 72%);
+  --color-secondary-400: hsl(340, 82%, 66%);
+  --color-secondary-500: hsl(340, 82%, 60%);
+  --color-secondary-600: hsl(340, 82%, 48%);
+  --color-secondary-700: hsl(340, 82%, 36%);
+  --color-secondary-800: hsl(340, 82%, 28%);
+  --color-secondary-900: hsl(340, 82%, 20%);
+  
+  /* Neutral/Gray Scale */
+  --color-neutral-50: hsl(210, 20%, 98%);
+  --color-neutral-100: hsl(210, 20%, 95%);
+  --color-neutral-200: hsl(210, 20%, 90%);
+  --color-neutral-300: hsl(210, 20%, 80%);
+  --color-neutral-400: hsl(210, 20%, 65%);
+  --color-neutral-500: hsl(210, 20%, 50%);
+  --color-neutral-600: hsl(210, 20%, 40%);
+  --color-neutral-700: hsl(210, 20%, 30%);
+  --color-neutral-800: hsl(210, 20%, 20%);
+  --color-neutral-900: hsl(210, 20%, 12%);
+  --color-neutral-950: hsl(210, 20%, 6%);
+  
+  /* Semantic Colors - Success */
+  --color-success-50: hsl(142, 76%, 97%);
+  --color-success-100: hsl(142, 76%, 92%);
+  --color-success-200: hsl(142, 76%, 84%);
+  --color-success-300: hsl(142, 76%, 72%);
+  --color-success-400: hsl(142, 76%, 60%);
+  --color-success-500: hsl(142, 76%, 48%);
+  --color-success-600: hsl(142, 76%, 40%);
+  --color-success-700: hsl(142, 76%, 32%);
+  --color-success-800: hsl(142, 76%, 24%);
+  --color-success-900: hsl(142, 76%, 16%);
+  
+  /* Semantic Colors - Warning */
+  --color-warning-50: hsl(38, 92%, 97%);
+  --color-warning-100: hsl(38, 92%, 92%);
+  --color-warning-200: hsl(38, 92%, 84%);
+  --color-warning-300: hsl(38, 92%, 72%);
+  --color-warning-400: hsl(38, 92%, 60%);
+  --color-warning-500: hsl(38, 92%, 50%);
+  --color-warning-600: hsl(38, 92%, 42%);
+  --color-warning-700: hsl(38, 92%, 34%);
+  --color-warning-800: hsl(38, 92%, 26%);
+  --color-warning-900: hsl(38, 92%, 18%);
+  
+  /* Semantic Colors - Error/Danger */
+  --color-error-50: hsl(0, 86%, 97%);
+  --color-error-100: hsl(0, 86%, 92%);
+  --color-error-200: hsl(0, 86%, 84%);
+  --color-error-300: hsl(0, 86%, 72%);
+  --color-error-400: hsl(0, 86%, 64%);
+  --color-error-500: hsl(0, 86%, 56%);
+  --color-error-600: hsl(0, 86%, 48%);
+  --color-error-700: hsl(0, 86%, 40%);
+  --color-error-800: hsl(0, 86%, 32%);
+  --color-error-900: hsl(0, 86%, 24%);
+  
+  /* Semantic Colors - Info */
+  --color-info-50: hsl(199, 89%, 97%);
+  --color-info-100: hsl(199, 89%, 92%);
+  --color-info-200: hsl(199, 89%, 84%);
+  --color-info-300: hsl(199, 89%, 72%);
+  --color-info-400: hsl(199, 89%, 60%);
+  --color-info-500: hsl(199, 89%, 48%);
+  --color-info-600: hsl(199, 89%, 40%);
+  --color-info-700: hsl(199, 89%, 32%);
+  --color-info-800: hsl(199, 89%, 24%);
+  --color-info-900: hsl(199, 89%, 16%);
+  
+  /* Surface Colors */
+  --color-background: hsl(0, 0%, 100%);
+  --color-surface: hsl(210, 20%, 98%);
+  --color-surface-variant: hsl(210, 20%, 95%);
+  --color-surface-hover: hsl(210, 20%, 92%);
+  
+  /* Text Colors */
+  --color-text-primary: hsl(210, 20%, 12%);
+  --color-text-secondary: hsl(210, 20%, 30%);
+  --color-text-tertiary: hsl(210, 20%, 50%);
+  --color-text-disabled: hsl(210, 20%, 65%);
+  --color-text-inverse: hsl(0, 0%, 100%);
+  
+  /* Border Colors */
+  --color-border-light: hsl(210, 20%, 90%);
+  --color-border-medium: hsl(210, 20%, 80%);
+  --color-border-strong: hsl(210, 20%, 65%);
+  
+  /* ========================================================================
+     Typography System
+     Fluid typography using clamp() for responsive scaling
+     ======================================================================== */
+  
+  /* Font Families */
+  --font-family-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  
+  /* Font Sizes - Fluid Typography */
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --font-size-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 1rem + 0.625vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+  --font-size-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);
+  --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 3.75rem);
+  --font-size-6xl: clamp(3.75rem, 3rem + 3.75vw, 4.5rem);
+  
+  /* Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  
+  /* ========================================================================
+     Spacing System
+     Fluid spacing using max() for responsive scaling
+     ======================================================================== */
+  
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: max(0.125rem, 0.5vw);
+  --space-1: max(0.25rem, 1vw);
+  --space-1-5: max(0.375rem, 1.5vw);
+  --space-2: max(0.5rem, 2vw);
+  --space-2-5: max(0.625rem, 2.5vw);
+  --space-3: max(0.75rem, 3vw);
+  --space-3-5: max(0.875rem, 3.5vw);
+  --space-4: max(1rem, 4vw);
+  --space-5: max(1.25rem, 5vw);
+  --space-6: max(1.5rem, 6vw);
+  --space-7: max(1.75rem, 7vw);
+  --space-8: max(2rem, 8vw);
+  --space-9: max(2.25rem, 9vw);
+  --space-10: max(2.5rem, 10vw);
+  --space-11: max(2.75rem, 11vw);
+  --space-12: max(3rem, 12vw);
+  --space-14: max(3.5rem, 14vw);
+  --space-16: max(4rem, 16vw);
+  --space-20: max(5rem, 20vw);
+  --space-24: max(6rem, 24vw);
+  --space-28: max(7rem, 28vw);
+  --space-32: max(8rem, 32vw);
+  --space-36: max(9rem, 36vw);
+  --space-40: max(10rem, 40vw);
+  --space-44: max(11rem, 44vw);
+  --space-48: max(12rem, 48vw);
+  --space-52: max(13rem, 52vw);
+  --space-56: max(14rem, 56vw);
+  --space-60: max(15rem, 60vw);
+  --space-64: max(16rem, 64vw);
+  --space-72: max(18rem, 72vw);
+  --space-80: max(20rem, 80vw);
+  --space-96: max(24rem, 96vw);
+  
+  /* ========================================================================
+     Breakpoints
+     Mobile-first responsive design breakpoints
+     ======================================================================== */
+  
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* Container Max Widths */
+  --container-xs: 320px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-2xl: 1536px;
+  
+  /* ========================================================================
+     Border Radius
+     ======================================================================== */
+  
+  --radius-none: 0;
+  --radius-sm: 0.125rem;
+  --radius-base: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* ========================================================================
+     Shadows
+     Layered shadow system for depth perception
+     ======================================================================== */
+  
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-base: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --shadow-none: 0 0 #0000;
+  
+  /* ========================================================================
+     Z-Index Scale
+     ======================================================================== */
+  
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  /* ========================================================================
+     Transitions & Animations
+     ======================================================================== */
+  
+  --transition-fast: 150ms;
+  --transition-base: 200ms;
+  --transition-medium: 300ms;
+  --transition-slow: 500ms;
+  
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* ========================================================================
+     Dynamic Viewport Units
+     Mobile-safe viewport height units
+     ======================================================================== */
+  
+  --vh: 1vh;
+  --dvh: 1dvh;
+  --svh: 1svh;
+  --lvh: 1lvh;
+  
+  /* ========================================================================
+     Opacity Scale
+     ======================================================================== */
+  
+  --opacity-0: 0;
+  --opacity-5: 0.05;
+  --opacity-10: 0.1;
+  --opacity-20: 0.2;
+  --opacity-25: 0.25;
+  --opacity-30: 0.3;
+  --opacity-40: 0.4;
+  --opacity-50: 0.5;
+  --opacity-60: 0.6;
+  --opacity-70: 0.7;
+  --opacity-75: 0.75;
+  --opacity-80: 0.8;
+  --opacity-90: 0.9;
+  --opacity-95: 0.95;
+  --opacity-100: 1;
+}
+
+/* ============================================================================
+   Dark Mode Variables
+   Automatic dark mode using prefers-color-scheme
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Primary Colors - Adjusted for dark mode */
+    --color-primary-50: hsl(217, 91%, 20%);
+    --color-primary-100: hsl(217, 91%, 28%);
+    --color-primary-200: hsl(217, 91%, 36%);
+    --color-primary-300: hsl(217, 91%, 48%);
+    --color-primary-400: hsl(217, 91%, 60%);
+    --color-primary-500: hsl(217, 91%, 66%);
+    --color-primary-600: hsl(217, 91%, 72%);
+    --color-primary-700: hsl(217, 91%, 84%);
+    --color-primary-800: hsl(217, 91%, 92%);
+    --color-primary-900: hsl(217, 91%, 97%);
+    
+    /* Secondary Colors - Adjusted for dark mode */
+    --color-secondary-50: hsl(340, 82%, 20%);
+    --color-secondary-100: hsl(340, 82%, 28%);
+    --color-secondary-200: hsl(340, 82%, 36%);
+    --color-secondary-300: hsl(340, 82%, 48%);
+    --color-secondary-400: hsl(340, 82%, 60%);
+    --color-secondary-500: hsl(340, 82%, 66%);
+    --color-secondary-600: hsl(340, 82%, 72%);
+    --color-secondary-700: hsl(340, 82%, 84%);
+    --color-secondary-800: hsl(340, 82%, 92%);
+    --color-secondary-900: hsl(340, 82%, 97%);
+    
+    /* Neutral Colors - Inverted for dark mode */
+    --color-neutral-50: hsl(210, 20%, 6%);
+    --color-neutral-100: hsl(210, 20%, 12%);
+    --color-neutral-200: hsl(210, 20%, 20%);
+    --color-neutral-300: hsl(210, 20%, 30%);
+    --color-neutral-400: hsl(210, 20%, 40%);
+    --color-neutral-500: hsl(210, 20%, 50%);
+    --color-neutral-600: hsl(210, 20%, 65%);
+    --color-neutral-700: hsl(210, 20%, 80%);
+    --color-neutral-800: hsl(210, 20%, 90%);
+    --color-neutral-900: hsl(210, 20%, 95%);
+    --color-neutral-950: hsl(210, 20%, 98%);
+    
+    /* Surface Colors - Dark mode */
+    --color-background: hsl(210, 20%, 6%);
+    --color-surface: hsl(210, 20%, 12%);
+    --color-surface-variant: hsl(210, 20%, 20%);
+    --color-surface-hover: hsl(210, 20%, 25%);
+    
+    /* Text Colors - Dark mode */
+    --color-text-primary: hsl(210, 20%, 98%);
+    --color-text-secondary: hsl(210, 20%, 90%);
+    --color-text-tertiary: hsl(210, 20%, 65%);
+    --color-text-disabled: hsl(210, 20%, 40%);
+    --color-text-inverse: hsl(210, 20%, 12%);
+    
+    /* Border Colors - Dark mode */
+    --color-border-light: hsl(210, 20%, 20%);
+    --color-border-medium: hsl(210, 20%, 30%);
+    --color-border-strong: hsl(210, 20%, 40%);
+    
+    /* Shadows - Adjusted for dark mode */
+    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+    --shadow-base: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.3);
+  }
+}
+
+/* ============================================================================
+   High Contrast Mode Support
+   Enhanced contrast for accessibility
+   ============================================================================ */
+
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary-500: hsl(217, 100%, 50%);
+    --color-secondary-500: hsl(340, 100%, 50%);
+    --color-text-primary: hsl(0, 0%, 0%);
+    --color-background: hsl(0, 0%, 100%);
+    --color-border-medium: hsl(0, 0%, 0%);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-primary: hsl(0, 0%, 100%);
+      --color-background: hsl(0, 0%, 0%);
+      --color-border-medium: hsl(0, 0%, 100%);
+    }
+  }
+}

@@ -1,0 +1,69 @@
+# robots.txt - Search Engine Crawler Instructions
+# Digital Marketing Agency Landing Page
+# Last updated: 2024-01-10
+
+# Allow all search engines to crawl public content
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow development and private resources
+Disallow: /admin/
+Disallow: /private/
+Disallow: /dev/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /test/
+Disallow: /tests/
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.config$
+
+# Disallow configuration and system files
+Disallow: /.env
+Disallow: /.gitignore
+Disallow: /.eslintrc
+Disallow: /.stylelintrc
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Allow specific files for SEO
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Crawl delay (optional, adjust based on server capacity)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.digitalmarketingagency.com/sitemap.xml
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

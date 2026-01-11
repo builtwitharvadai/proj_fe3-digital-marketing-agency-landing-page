@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Marketing Agency | Growth-Driven SEO • PPC • Social</title>
-  <meta name="description" content="Results-focused digital marketing agency specializing in SEO, Google & Meta Ads, social media growth and high-converting content strategies."/>
+  <meta name="description" content="Results-focused digital marketing agency specializing in SEO, Google &amp; Meta Ads, social media growth and high-converting content strategies">
 
   <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Digital Marketing Agency | Real Growth, Real Results"/>
-  <meta property="og:description" content="We help ambitious brands scale with data-driven SEO, paid media & creative strategies."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200"/>
+  <meta property="og:title" content="Digital Marketing Agency | Real Growth, Real Results">
+  <meta property="og:description" content="We help ambitious brands scale with data-driven SEO, paid media &amp; creative strategies">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200">
 
   <style>
     :root {
-      --primary:    #6366f1;
-      --primary-dark:#4f46e5;
-      --primary-light:#818cf8;
-      --gray-50:    #f8fafc;
-      --gray-100:   #f1f5f9;
-      --gray-200:   #e2e8f0;
-      --gray-600:   #475569;
-      --gray-900:   #0f172a;
-      --radius:     1rem;
-      --shadow-sm:  0 4px 6px -1px rgb(0 0 0 / 0.1);
-      --shadow-md:  0 10px 15px -3px rgb(0 0 0 / 0.12);
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --primary-light: #818cf8;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-600: #475569;
+      --gray-900: #0f172a;
+      --radius: 1rem;
+      --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.12);
       --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -48,7 +48,16 @@
       padding-inline: clamp(1.5rem, 5vw, 3rem);
     }
 
-    /* Header ──────────────────────────────────────────────── */
+    /* Footer style moved from inline → class */
+    .footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 5rem 0 3rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    /* Rest of your existing styles (unchanged) */
     header {
       position: sticky;
       top: 0;
@@ -99,7 +108,9 @@
     }
 
     .nav-link:hover,
-    .nav-link.active { color: var(--primary); }
+    .nav-link.active {
+      color: var(--primary);
+    }
 
     .nav-link:hover::after,
     .nav-link.active::after {
@@ -122,7 +133,6 @@
       transition: all 0.4s ease;
     }
 
-    /* Hero ────────────────────────────────────────────────── */
     .hero {
       padding: 11rem 0 9rem;
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
@@ -167,7 +177,6 @@
       flex-wrap: wrap;
     }
 
-    /* Buttons ─────────────────────────────────────────────── */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -205,7 +214,6 @@
       transform: translateY(-3px);
     }
 
-    /* Services ────────────────────────────────────────────── */
     .services {
       padding: 9rem 0;
       background: var(--gray-50);
@@ -265,14 +273,15 @@
       margin-bottom: 1rem;
     }
 
-    /* Contact ─────────────────────────────────────────────── */
     .contact {
       padding: 9rem 0;
       background: var(--gray-900);
       color: white;
     }
 
-    .contact .section-title { color: white; }
+    .contact .section-title {
+      color: white;
+    }
 
     .contact-form {
       max-width: 720px;
@@ -320,12 +329,10 @@
       resize: vertical;
     }
 
-    /* Mobile Responsive */
     @media (max-width: 768px) {
-      .hero           { padding: 8rem 0 6rem; }
-      .hero-title     { font-size: clamp(2.8rem, 8vw, 4.2rem); }
-      .hero-buttons   { flex-direction: column; width: 100%; max-width: 420px; margin: 0 auto; }
-
+      .hero { padding: 8rem 0 6rem; }
+      .hero-title { font-size: clamp(2.8rem, 8vw, 4.2rem); }
+      .hero-buttons { flex-direction: column; width: 100%; max-width: 420px; margin: 0 auto; }
       .nav-list {
         display: none;
         position: absolute;
@@ -335,11 +342,8 @@
         padding: 2rem 1.5rem;
         box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.15);
       }
-
       .nav-list.active { display: flex; }
-
       .mobile-menu-btn { display: flex; }
-
       .form-grid { grid-template-columns: 1fr; }
     }
 
@@ -354,7 +358,7 @@
   <div class="container header-inner">
     <a href="#" class="logo">DigitalMarketing</a>
 
-    <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+    <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" type="button">
       <span></span><span></span><span></span>
     </button>
 
@@ -374,9 +378,8 @@
     <div class="hero-content">
       <h1 class="hero-title">Scale Smarter.<br> Grow Faster.</h1>
       <p class="hero-subtitle">
-        Data-driven digital marketing that actually moves the needle — SEO • Paid Media • Creative • Analytics
+        Data-driven digital marketing that actually moves the needle — SEO &amp; Paid Media &amp; Creative &amp; Analytics
       </p>
-
       <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary">Get Free Strategy Call</a>
         <a href="#portfolio" class="btn btn-outline">View Case Studies</a>
@@ -399,8 +402,8 @@
 
       <div class="service-card">
         <div class="service-icon">PPC</div>
-        <h3>Google & Meta Ads</h3>
-        <p>ROAS-focused campaigns with creative testing, smart bidding & full-funnel conversion architecture</p>
+        <h3>Google &amp; Meta Ads</h3>
+        <p>ROAS-focused campaigns with creative testing, smart bidding &amp; full-funnel conversion architecture</p>
       </div>
 
       <div class="service-card">
@@ -412,7 +415,7 @@
       <div class="service-card">
         <div class="service-icon">CONT</div>
         <h3>High-Converting Content</h3>
-        <p>Blog, video, lead magnets & sales pages written to convert — not just to exist</p>
+        <p>Blog, video, lead magnets &amp; sales pages written to convert — not just to exist</p>
       </div>
     </div>
   </div>
@@ -422,7 +425,7 @@
   <div class="container">
     <div class="text-center">
       <h2 class="section-title">Ready to Scale in 2026?</h2>
-      <p style="font-size:1.3rem; opacity:0.9; max-width:580px; margin:1.5rem auto;">
+      <p class="contact-subtitle">
         Book a free 30-min strategy call — no fluff, just real growth opportunities for your business.
       </p>
     </div>
@@ -431,11 +434,11 @@
       <div class="form-grid">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required placeholder="John Doe"/>
+          <input type="text" id="name" name="name" required placeholder="John Doe">
         </div>
         <div class="form-group">
           <label for="email">Business Email</label>
-          <input type="email" id="email" name="email" required placeholder="hello@yourcompany.com"/>
+          <input type="email" id="email" name="email" required placeholder="hello@yourcompany.com">
         </div>
       </div>
 
@@ -445,15 +448,15 @@
       </div>
 
       <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.2rem; padding:1.3rem;">
-        Send Message & Book Strategy Call
+        Send Message &amp; Book Strategy Call
       </button>
     </form>
   </div>
 </section>
 
-<footer style="background:#0f172a; color:#94a3b8; padding:5rem 0 3rem; text-align:center; font-size:0.95rem;">
+<footer class="footer">
   <div class="container">
-    <p>© 2026 Digital Marketing Agency — All systems built for real growth.</p>
+    <p>&copy; 2026 Digital Marketing Agency — All systems built for real growth.</p>
   </div>
 </footer>
 

@@ -1,347 +1,474 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <!-- Character encoding MUST be first -->
-  <meta charset="UTF-8">
-  
-  <!-- Viewport for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  
-  <!-- Document title with site name -->
-  <title>Digital Marketing Agency | Expert SEO, PPC & Social Media Services</title>
-  
-  <!-- Meta descriptions for SEO -->
-  <meta name="description" content="Transform your digital presence with our expert marketing services. Specializing in SEO, PPC advertising, social media management, and content marketing to drive measurable results for your business.">
-  <meta name="keywords" content="digital marketing, SEO services, PPC advertising, social media marketing, content marketing, marketing agency, online marketing, digital strategy">
-  <meta name="author" content="Digital Marketing Agency">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  
-  <!-- Canonical URL to prevent duplicate content -->
-  <link rel="canonical" href="https://www.digitalmarketingagency.com/">
-  
-  <!-- Open Graph for social media -->
-  <meta property="og:title" content="Digital Marketing Agency | Expert SEO, PPC & Social Media Services">
-  <meta property="og:description" content="Transform your digital presence with our expert marketing services. Specializing in SEO, PPC advertising, social media management, and content marketing to drive measurable results for your business.">
-  <meta property="og:image" content="https://www.digitalmarketingagency.com/images/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Digital Marketing Agency - Expert Marketing Services">
-  <meta property="og:url" content="https://www.digitalmarketingagency.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Digital Marketing Agency">
-  <meta property="og:locale" content="en_US">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Digital Marketing Agency | Expert SEO, PPC & Social Media Services">
-  <meta name="twitter:description" content="Transform your digital presence with our expert marketing services. Specializing in SEO, PPC advertising, social media management, and content marketing.">
-  <meta name="twitter:image" content="https://www.digitalmarketingagency.com/images/og-image.jpg">
-  <meta name="twitter:image:alt" content="Digital Marketing Agency - Expert Marketing Services">
-  <meta name="twitter:site" content="@digitalmarketingagency">
-  <meta name="twitter:creator" content="@digitalmarketingagency">
-  
-  <!-- Additional SEO meta tags -->
-  <meta name="geo.region" content="US">
-  <meta name="geo.placename" content="United States">
-  <meta name="language" content="English">
-  <meta name="revisit-after" content="7 days">
-  
-  <!-- Theme color -->
-  <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#6366F1" media="(prefers-color-scheme: dark)">
-  
-  <!-- DNS prefetch and preconnect for performance -->
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/typography.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/images.css">
-  <link rel="stylesheet" href="css/accessibility.css">
-  <link rel="stylesheet" href="css/main.css">
-  
-  <!-- JSON-LD Structured Data for Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Digital Marketing Agency",
-    "url": "https://www.digitalmarketingagency.com",
-    "logo": "https://www.digitalmarketingagency.com/images/logo.png",
-    "description": "Expert digital marketing services including SEO, PPC, social media management, and content marketing",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "US"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Service",
-      "email": "info@digitalmarketingagency.com"
-    },
-    "sameAs": [
-      "https://www.facebook.com/digitalmarketingagency",
-      "https://www.twitter.com/digitalmarketingagency",
-      "https://www.linkedin.com/company/digitalmarketingagency",
-      "https://www.instagram.com/digitalmarketingagency"
-    ]
-  }
-  </script>
-  
-  <!-- JSON-LD Structured Data for Services -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Digital Marketing Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Digital Marketing Agency"
-    },
-    "areaServed": "US",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Digital Marketing Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "SEO Services",
-            "description": "Comprehensive search engine optimization to improve your website's visibility and organic traffic"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "PPC Advertising",
-            "description": "Data-driven pay-per-click campaigns that maximize ROI and drive qualified leads"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Social Media Marketing",
-            "description": "Strategic social media management to build brand awareness and engage your audience"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Content Marketing",
-            "description": "High-quality content creation that attracts, engages, and converts your target audience"
-          }
-        }
-      ]
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Marketing Agency | Growth-Driven SEO • PPC • Social</title>
+  <meta name="description" content="Results-focused digital marketing agency specializing in SEO, Google & Meta Ads, social media growth and high-converting content strategies."/>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Digital Marketing Agency | Real Growth, Real Results"/>
+  <meta property="og:description" content="We help ambitious brands scale with data-driven SEO, paid media & creative strategies."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200"/>
+
+  <style>
+    :root {
+      --primary:    #6366f1;
+      --primary-dark:#4f46e5;
+      --primary-light:#818cf8;
+      --gray-50:    #f8fafc;
+      --gray-100:   #f1f5f9;
+      --gray-200:   #e2e8f0;
+      --gray-600:   #475569;
+      --gray-900:   #0f172a;
+      --radius:     1rem;
+      --shadow-sm:  0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --shadow-md:  0 10px 15px -3px rgb(0 0 0 / 0.12);
+      --transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
-  </script>
-  
-  <!-- JSON-LD Structured Data for Website -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Digital Marketing Agency",
-    "url": "https://www.digitalmarketingagency.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.digitalmarketingagency.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }
-  </script>
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: white;
+      color: var(--gray-900);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin-inline: auto;
+      padding-inline: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    /* Header ──────────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5.5rem;
+    }
+
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+
+    .nav-list {
+      display: flex;
+      gap: 2.8rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--gray-900);
+      text-decoration: none;
+      font-weight: 550;
+      position: relative;
+      transition: color 0.25s;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -8px;
+      left: 50%;
+      background: var(--primary);
+      transition: width 0.35s, left 0.35s;
+    }
+
+    .nav-link:hover,
+    .nav-link.active { color: var(--primary); }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      width: 38px;
+      cursor: pointer;
+    }
+
+    .mobile-menu-btn span {
+      height: 3.5px;
+      background: var(--gray-900);
+      border-radius: 2px;
+      transition: all 0.4s ease;
+    }
+
+    /* Hero ────────────────────────────────────────────────── */
+    .hero {
+      padding: 11rem 0 9rem;
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: -50%;
+      background: radial-gradient(circle at 30% 20%, rgba(99,102,241,0.18) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .hero-title {
+      font-size: clamp(3.4rem, 7.2vw, 5.6rem);
+      font-weight: 800;
+      line-height: 1.05;
+      margin-bottom: 1.6rem;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-subtitle {
+      font-size: 1.45rem;
+      color: var(--gray-600);
+      max-width: 640px;
+      margin: 0 auto 2.8rem;
+      line-height: 1.45;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Buttons ─────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.95rem 2.1rem;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border: 2px solid var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    /* Services ────────────────────────────────────────────── */
+    .services {
+      padding: 9rem 0;
+      background: var(--gray-50);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(2.6rem, 5.5vw, 3.8rem);
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--gray-600);
+      font-size: 1.3rem;
+      max-width: 580px;
+      margin: 0 auto 4.5rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .service-card {
+      padding: 2.5rem 2rem;
+      background: white;
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: translateY(-14px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-light);
+    }
+
+    .service-icon {
+      width: 4.8rem;
+      height: 4.8rem;
+      margin: 0 auto 1.8rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 1.1rem;
+      display: grid;
+      place-items: center;
+      font-size: 1.9rem;
+      font-weight: bold;
+    }
+
+    .service-card h3 {
+      font-size: 1.55rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact ─────────────────────────────────────────────── */
+    .contact {
+      padding: 9rem 0;
+      background: var(--gray-900);
+      color: white;
+    }
+
+    .contact .section-title { color: white; }
+
+    .contact-form {
+      max-width: 720px;
+      margin: 4rem auto 0;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .form-group label {
+      font-weight: 550;
+      color: #cbd5e1;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 1rem 1.4rem;
+      border: 1.5px solid #475569;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.07);
+      color: white;
+      font-size: 1.05rem;
+      transition: 0.25s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.25);
+    }
+
+    .form-group textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .hero           { padding: 8rem 0 6rem; }
+      .hero-title     { font-size: clamp(2.8rem, 8vw, 4.2rem); }
+      .hero-buttons   { flex-direction: column; width: 100%; max-width: 420px; margin: 0 auto; }
+
+      .nav-list {
+        display: none;
+        position: absolute;
+        inset: 5.5rem 0 0;
+        background: white;
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.15);
+      }
+
+      .nav-list.active { display: flex; }
+
+      .mobile-menu-btn { display: flex; }
+
+      .form-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .section-title { font-size: 2.6rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Skip navigation for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <a href="#services" class="skip-link">Skip to services</a>
-  <a href="#contact" class="skip-link">Skip to contact</a>
-  
-  <!-- Header -->
-  <header role="banner">
-    <nav role="navigation" aria-label="Main navigation">
-      <div class="container">
-        <a href="/" class="logo" aria-label="Digital Marketing Agency Home">
-          <span aria-hidden="true">Digital Marketing Agency</span>
-        </a>
-        <ul role="list">
-          <li><a href="#services" aria-label="View our services">Services</a></li>
-          <li><a href="#about" aria-label="Learn about us">About</a></li>
-          <li><a href="#portfolio" aria-label="View our portfolio">Portfolio</a></li>
-          <li><a href="#contact" aria-label="Contact us">Contact</a></li>
-        </ul>
-      </div>
+
+<header>
+  <div class="container header-inner">
+    <a href="#" class="logo">DigitalMarketing</a>
+
+    <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- Main Content -->
-  <main id="main-content" role="main">
-    <!-- Hero Section -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <h1 id="hero-heading">Transform Your Digital Presence</h1>
-        <p class="hero-subtitle">Expert marketing strategies that drive real results for your business</p>
-        <a href="#contact" class="cta-button" aria-label="Get started with our services">Get Started</a>
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Scale Smarter.<br> Grow Faster.</h1>
+      <p class="hero-subtitle">
+        Data-driven digital marketing that actually moves the needle — SEO • Paid Media • Creative • Analytics
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get Free Strategy Call</a>
+        <a href="#portfolio" class="btn btn-outline">View Case Studies</a>
       </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services" aria-labelledby="services-heading">
-      <div class="container">
-        <h2 id="services-heading">Our Services</h2>
-        <div class="services-grid" role="list">
-          <article class="service-card" role="listitem">
-            <h3>SEO Services</h3>
-            <p>Boost your organic visibility and drive qualified traffic to your website with our comprehensive SEO strategies.</p>
-            <a href="#contact" aria-label="Learn more about SEO services">Learn More</a>
-          </article>
-          <article class="service-card" role="listitem">
-            <h3>PPC Advertising</h3>
-            <p>Maximize your ROI with data-driven pay-per-click campaigns across Google Ads, Facebook, and more.</p>
-            <a href="#contact" aria-label="Learn more about PPC advertising">Learn More</a>
-          </article>
-          <article class="service-card" role="listitem">
-            <h3>Social Media Marketing</h3>
-            <p>Build brand awareness and engage your audience with strategic social media management and content.</p>
-            <a href="#contact" aria-label="Learn more about social media marketing">Learn More</a>
-          </article>
-          <article class="service-card" role="listitem">
-            <h3>Content Marketing</h3>
-            <p>Create compelling content that attracts, engages, and converts your target audience into loyal customers.</p>
-            <a href="#contact" aria-label="Learn more about content marketing">Learn More</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about" aria-labelledby="about-heading">
-      <div class="container">
-        <h2 id="about-heading">About Us</h2>
-        <p>We are a team of passionate digital marketing experts dedicated to helping businesses grow their online presence and achieve measurable results.</p>
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
-      <div class="container">
-        <h2 id="portfolio-heading">Our Work</h2>
-        <div class="portfolio-grid" role="list">
-          <article class="portfolio-item" role="listitem">
-            <img src="images/hero-bg.jpg" alt="E-commerce website redesign project showcasing modern design and improved user experience" loading="lazy" width="400" height="300">
-            <h3>E-commerce Success Story</h3>
-            <p>Increased online sales by 150% through strategic SEO and PPC campaigns.</p>
-          </article>
-          <article class="portfolio-item" role="listitem">
-            <img src="images/og-image.jpg" alt="Social media marketing campaign results showing increased engagement and follower growth" loading="lazy" width="400" height="300">
-            <h3>Social Media Growth</h3>
-            <p>Grew social media following by 300% and doubled engagement rates.</p>
-          </article>
-          <article class="portfolio-item" role="listitem">
-            <img src="images/about-team.jpg" alt="Content marketing strategy implementation with blog posts and infographics" loading="lazy" width="400" height="300">
-            <h3>Content Marketing Excellence</h3>
-            <p>Generated 500% increase in organic traffic through strategic content creation.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <h2 id="contact-heading">Get In Touch</h2>
-        <form method="POST" action="/submit" novalidate aria-label="Contact form">
-          <fieldset>
-            <legend class="sr-only">Contact Information</legend>
-            
-            <div class="form-group">
-              <label for="name">
-                Name
-                <span aria-label="required" class="required">*</span>
-              </label>
-              <input 
-                type="text" 
-                id="name" 
-                name="name"
-                required
-                aria-required="true"
-                aria-invalid="false"
-                aria-describedby="name-error"
-                autocomplete="name"
-              >
-              <span id="name-error" class="error" role="alert" aria-live="polite"></span>
-            </div>
-            
-            <div class="form-group">
-              <label for="email">
-                Email
-                <span aria-label="required" class="required">*</span>
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email"
-                required
-                aria-required="true"
-                aria-invalid="false"
-                aria-describedby="email-error"
-                autocomplete="email"
-                inputmode="email"
-              >
-              <span id="email-error" class="error" role="alert" aria-live="polite"></span>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">
-                Message
-                <span aria-label="required" class="required">*</span>
-              </label>
-              <textarea 
-                id="message" 
-                name="message"
-                rows="5"
-                required
-                aria-required="true"
-                aria-invalid="false"
-                aria-describedby="message-error"
-              ></textarea>
-              <span id="message-error" class="error" role="alert" aria-live="polite"></span>
-            </div>
-          </fieldset>
-          
-          <button type="submit" aria-label="Submit contact form">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <div class="container">
-      <p>&copy; 2024 Digital Marketing Agency. All rights reserved.</p>
-      <nav aria-label="Footer navigation">
-        <ul role="list">
-          <li><a href="/privacy" aria-label="Read our privacy policy">Privacy Policy</a></li>
-          <li><a href="/terms" aria-label="Read our terms of service">Terms of Service</a></li>
-        </ul>
-      </nav>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Scripts -->
-  <script src="js/utils.js" defer></script>
-  <script src="js/main.js" defer></script>
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">What We Actually Do Well</h2>
+    <p class="section-subtitle">Proven systems that help ambitious brands get more customers, not just more traffic</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">SEO</div>
+        <h3>Search Engine Domination</h3>
+        <p>Technical SEO + content strategy + link building that ranks and stays ranked in 2025–2026 algorithm environment</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">PPC</div>
+        <h3>Google & Meta Ads</h3>
+        <p>ROAS-focused campaigns with creative testing, smart bidding & full-funnel conversion architecture</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">SOCIAL</div>
+        <h3>Social Media Growth</h3>
+        <p>Organic + paid social that builds real communities and turns followers into customers</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">CONT</div>
+        <h3>High-Converting Content</h3>
+        <p>Blog, video, lead magnets & sales pages written to convert — not just to exist</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-title">Ready to Scale in 2026?</h2>
+      <p style="font-size:1.3rem; opacity:0.9; max-width:580px; margin:1.5rem auto;">
+        Book a free 30-min strategy call — no fluff, just real growth opportunities for your business.
+      </p>
+    </div>
+
+    <form class="contact-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Business Email</label>
+          <input type="email" id="email" name="email" required placeholder="hello@yourcompany.com"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">What are your biggest growth challenges right now?</label>
+        <textarea id="message" name="message" rows="5" required placeholder="e.g. high ad costs, poor organic rankings, low website conversion..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.2rem; padding:1.3rem;">
+        Send Message & Book Strategy Call
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer style="background:#0f172a; color:#94a3b8; padding:5rem 0 3rem; text-align:center; font-size:0.95rem;">
+  <div class="container">
+    <p>© 2026 Digital Marketing Agency — All systems built for real growth.</p>
+  </div>
+</footer>
+
+<script>
+// Very simple mobile menu toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.mobile-menu-btn');
+  const menu = document.querySelector('.nav-list');
+
+  btn?.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    const expanded = menu.classList.contains('active');
+    btn.setAttribute('aria-expanded', expanded);
+  });
+});
+</script>
 </body>
 </html>

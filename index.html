@@ -48,7 +48,7 @@
       padding-inline: clamp(1.5rem, 5vw, 3rem);
     }
 
-    /* Footer style moved from inline → class */
+    /* Footer class (previously inline) */
     .footer {
       background: #0f172a;
       color: #94a3b8;
@@ -57,7 +57,14 @@
       font-size: 0.95rem;
     }
 
-    /* Rest of your existing styles (unchanged) */
+    /* New class for full-width button styling */
+    .btn-full-width {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 1.3rem;
+    }
+
+    /* === Rest of your original CSS (unchanged) === */
     header {
       position: sticky;
       top: 0;
@@ -447,7 +454,8 @@
         <textarea id="message" name="message" rows="5" required placeholder="e.g. high ad costs, poor organic rankings, low website conversion..."></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.2rem; padding:1.3rem;">
+      <!-- Fixed: removed inline style, added class instead -->
+      <button type="submit" class="btn btn-primary btn-full-width">
         Send Message &amp; Book Strategy Call
       </button>
     </form>
